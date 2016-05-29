@@ -1,9 +1,9 @@
 test: all
-	cp test ../	
+	cp test ../utest	
 all: test.o
 	gcc test.o -o test
 test.o:
 	gcc test.c -o test.o -c
 clean:
 	rm test test.o
-	rm ../test
+	rm ../utest
